@@ -1,0 +1,139 @@
+/*
+
+******** Typography system *********
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+- Fonts used 
+font-family: 'Abril Fatface', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+- Font weight
+Default: 400
+Abril Fatface: 400
+Lato: 300, 400, 700
+Montserrat: 300, 400, 700
+
+- Line Height
+Default: 1
+
+******** Colors  ******************
+- Primary: #FEBF23
+- Tints: 
+- Shades: 
+- Accents: 
+- Grays: #555 
+
+
+
+******** Spacing system  ******************
+- Spaces (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+Used websites: https://maketintsandshades.com/ (generate tint and shade)
+  https://yeun.github.io/open-color/ (tints of predefined colors - useful for fonts and buttons)
+  https://coolors.co/ (check contrast) 
+  https://heroicons.com/ (icons)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.html {
+  /* setting the font size to 10 px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #555;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ------  Reusable components ---------- */
+
+.container {
+  min-width: 1400px;
+  margin: 0 auto;
+}
+
+.padding-right-m {
+  padding-right: 20 !important;
+}
+
+.padding-top-m {
+  padding-top: 2rem !important;
+}
+
+.margin-right-m {
+  margin-right: 20 !important;
+}
+
+.inline-flex {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+.button-main {
+  background-color: #febf23;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* ------  Header ---------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 4rem;
+  margin-left: 3rem;
+}
+
+.icon {
+  width: 2rem;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items li:last-child {
+  margin-right: 3rem;
+}
+
+/* ------  Reusable components ---------- */
+/* ------  Reusable components ---------- */
+/* ------  Reusable components ---------- */
+/* ------  Reusable components ---------- */
+/* ------  Reusable components ---------- */
