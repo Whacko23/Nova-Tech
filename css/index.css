@@ -98,11 +98,34 @@ ul {
   background-color: #febf23;
   padding: 0.8rem 1.6rem;
   font-size: 1rem;
+  font-weight: 700;
+  border: solid 2px #000;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -ms-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.button-main:hover {
+  background-color: #000;
+  color: #febf23;
+}
+
+.hover-zoom {
+  transition: font-size 2s ease-in 2s;
+  -webkit-transition: font-size 2s ease-in 2s;
+  -moz-transition: font-size 2s ease-in 2s;
+  -ms-transition: font-size 2s ease-in 2s;
+  -o-transition: font-size 2s ease-in 2s;
+}
+.hover-zoom:hover {
+  font-size: 120%;
 }
 /* ------  Header ---------- */
 
@@ -110,6 +133,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  height: 6em;
 }
 
 .logo {
@@ -130,6 +155,16 @@ ul {
 
 .nav-items li:last-child {
   margin-right: 3rem;
+}
+
+.nav-active {
+  padding-bottom: 0.5em;
+  border-bottom: solid 2px #febf23;
+  transform: scale(0.5%);
+  -webkit-transform: scale(0.5%);
+  -moz-transform: scale(0.5%);
+  -ms-transform: scale(0.5%);
+  -o-transform: scale(0.5%);
 }
 
 /* ------  Reusable components ---------- */
