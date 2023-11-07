@@ -25,7 +25,7 @@ Default: 1
 - Tints: 
 - Shades: 
 - Accents: 
-- Grays: #555 
+- Grays: #555 #222
 
 
 
@@ -39,6 +39,7 @@ Used websites: https://maketintsandshades.com/ (generate tint and shade)
   https://coolors.co/ (check contrast) 
   https://heroicons.com/ (icons)
   https://fontjoy.com/ (font pairings)
+  https://www.shapedivider.app/ (wave generator)
 */
 
 * {
@@ -80,6 +81,10 @@ ul {
   min-width: 1200px;
   margin: 0 auto;
   max-width: 80vw;
+}
+
+section {
+  margin-bottom: 10rem !important;
 }
 
 .padding-right-m {
@@ -209,6 +214,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 4rem;
+  /* height: 70vh; */
 }
 .hero-contents {
   display: flex;
@@ -241,7 +247,41 @@ ul {
 .icon-text-container p {
   font-size: 0.8rem;
 }
-/* ------  Reusable components ---------- */
+/* ------  Filler component ---------- */
+.custom-shape-divider-bottom-1699315946 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1699315946 svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 59px;
+}
+
+.custom-shape-divider-bottom-1699315946 .shape-fill {
+  fill: #febf23;
+}
+.filler-container {
+  background-color: #febf23;
+}
+.filler-text {
+  display: grid;
+  padding: 10rem 0;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.filler-main {
+  font-family: "Lato", sans-serif;
+  font-size: 2.4rem;
+  color: #222;
+  line-height: 1.4;
+}
+.filler-secondary {
+  line-height: 1.8;
+  color: #222;
+}
 /* ------  Reusable components ---------- */
 /* ------  Reusable components ---------- */
 /* ------  Reusable components ---------- */
