@@ -104,7 +104,6 @@ h3 {
   font-family: "Lato", sans-serif;
   font-size: 1.4rem;
   line-height: 1.4;
-  font-weight: 700;
 }
 
 .half-split-grid {
@@ -120,6 +119,14 @@ h3 {
 
 .padding-top-m {
   padding-top: 2rem !important;
+}
+
+.padding-top-xl {
+  padding-top: 10rem !important;
+}
+
+.padding-bot-xl {
+  padding-bottom: 10rem !important;
 }
 
 .margin-right-m {
@@ -340,5 +347,55 @@ h3 {
   line-height: 1.6;
 }
 
-/* ------  Reusable components ---------- */
+.offers h3 {
+  text-transform: capitalize;
+}
+
+/* ------  Partners ---------- */
+.custom-shape-divider-bottom-1699823544 {
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1699823544 svg {
+  /* position: relative; */
+  display: block;
+  width: calc(148% + 1.3px);
+  height: 60px;
+}
+
+.custom-shape-divider-bottom-1699823544 .shape-fill {
+  fill: #FFD6EF;
+}
+
+.partner-container {
+  background-color: #FFD6EF;
+}
+
+.partner-container p {
+  width: 35rem;
+  line-height: 1.8;
+  padding: 2rem 0 4rem 0;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template: 1fr 1fr/ repeat(4, 1fr);
+  row-gap: 3rem;
+}
+
+.partner-grid-items {
+  justify-self: center;
+}
+
+.partners img {
+  width: 10rem;
+  height: 10rem;
+}
+
 /* ------  Reusable components ---------- */
