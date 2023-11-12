@@ -20,6 +20,7 @@ Default: 1
 
 ******** Colors  ******************
 - Primary: #FEBF23
+- Secondary: #FFD6EF
 - Tints: 
 - Shades: 
 - Accents: 
@@ -79,6 +80,7 @@ ul {
   min-width: 1200px;
   margin: 0 auto;
   max-width: 80vw;
+  padding: 0 2rem;
 }
 
 section {
@@ -97,12 +99,21 @@ h2 {
   line-height: 1.4;
   font-weight: 400;
 }
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
 .half-split-grid {
   display: grid;
   padding: 10rem 0;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
+
 .padding-right-m {
   padding-right: 20 !important;
 }
@@ -173,9 +184,11 @@ h2 {
   -ms-transition: font-size 2s ease-in 2s;
   -o-transition: font-size 2s ease-in 2s;
 }
+
 .hover-zoom:hover {
   font-size: 110%;
 }
+
 /* ------  Header ---------- */
 
 .navbar {
@@ -232,6 +245,7 @@ h2 {
   margin-top: 4rem;
   /* height: 70vh; */
 }
+
 .hero-contents {
   display: flex;
   flex-direction: column;
@@ -243,21 +257,26 @@ h2 {
 .hero-img {
   height: 30rem;
 }
+
 .hero-icons {
   display: flex;
   justify-content: space-between;
   width: 80%;
 }
+
 .icon-text-container {
   display: flex;
   gap: 1rem;
 }
+
 .hero-contents p {
   line-height: 1.6;
 }
+
 .icon-text-container p {
   font-size: 0.8rem;
 }
+
 /* ------  Filler component ---------- */
 .custom-shape-divider-bottom-1699315946 {
   width: 100%;
@@ -274,16 +293,52 @@ h2 {
 .custom-shape-divider-bottom-1699315946 .shape-fill {
   fill: #febf23;
 }
+
 .filler-container {
   background-color: #febf23;
 }
+
 .filler-main {
   color: #222;
 }
+
 .filler-secondary {
   line-height: 1.8;
   color: #222;
 }
-/* ------  Reusable components ---------- */
+
+/* ------  Offers ---------- */
+.offers-h2-description {
+  width: 35rem;
+  line-height: 1.8;
+  padding: 2rem 0 4rem 0;
+}
+
+.image-offers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.image-text-offer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.offer-img {
+  width: 15rem;
+  border: #000 2px solid;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.image-text-offer-box p {
+  line-height: 1.6;
+}
+
 /* ------  Reusable components ---------- */
 /* ------  Reusable components ---------- */
