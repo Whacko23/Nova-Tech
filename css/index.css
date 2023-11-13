@@ -3,7 +3,7 @@
 ******** Typography system *********
 
 - Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+7/ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 
 - Fonts used 
@@ -12,7 +12,7 @@ font-family: 'Montserrat', sans-serif;
 
 - Font weight
 Default: 400
-Lato: 300, 400, 700
+Lato: 400, 700, 900
 Montserrat: 300, 400, 700
 
 - Line Height
@@ -20,11 +20,11 @@ Default: 1
 
 ******** Colors  ******************
 - Primary: #FEBF23
-- Secondary: #FFD6EF
+- Secondary: #FFD6EF 
 - Tints: 
 - Shades: 
-- Accents: 
-- Grays: #555 #222
+- Accents: #e8ecf9
+- Grays: #555 #222 #F6F5F5
 
 
 
@@ -39,6 +39,7 @@ Used websites: https://maketintsandshades.com/ (generate tint and shade)
   https://heroicons.com/ (icons)
   https://fontjoy.com/ (font pairings)
   https://www.shapedivider.app/ (wave generator)
+  https://getwaves.io/ (wave generator)
 */
 
 * {
@@ -114,12 +115,24 @@ h3 {
   align-items: center;
 }
 
+.pad-bot-reset {
+  padding-bottom: 0;
+}
+
 .padding-right-m {
-  padding-right: 20 !important;
+  padding-right: 2rem !important;
+}
+
+.padding-right-s {
+  padding-right: 1rem !important;
 }
 
 .padding-top-m {
   padding-top: 2rem !important;
+}
+
+.padding-left-m {
+  padding-left: 2rem !important;
 }
 
 .padding-top-xl {
@@ -183,10 +196,22 @@ h3 {
 
 .btn-alt {
   background-color: #000;
-  color: #febf23;
+  color: #fff;
 }
 
 .btn-alt:hover {
+  background-color: #febf23;
+  color: #000;
+  border: solid 2px #000;
+  font-size: 120%;
+}
+
+.btn-alt2 {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-alt2:hover {
   background-color: #febf23;
   color: #000;
   border: solid 2px #000;
@@ -231,6 +256,11 @@ h3 {
 
 .icon:hover {
   color: #febf23;
+}
+
+.icon-s {
+  width: 12px !important;
+  height: 12px !important;
 }
 
 .nav-items {
@@ -487,5 +517,153 @@ h3 {
   content: ",";
 }
 
-/* ------  Reusable components ---------- */
+/* ------  Pricing ---------- */
+.pricing {
+  background-color: #F6F5F5;
+  color: #222;
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+.pricing-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.pricing p {
+  width: 70%;
+  line-height: 1.8;
+}
+
+.pricing button {
+  align-self: flex-start;
+}
+
+/* put the pricing box in reusable components */
+.pricing-box {
+  display: grid;
+  grid-template-rows: 60% 1fr;
+  width: 70%;
+  /* height: 30rem; */
+}
+
+.pricing-box {
+  border: solid 2px #000;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.price-box {
+  background-color: #e8ecf9;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+  padding: 3rem 1.5rem 8rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.benefit-box {
+  background-color: #FFD6EF;
+  border-top: solid 2px #000;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  justify-content: flex-start;
+  border-radius: 0 0 20px 20px;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  -ms-border-radius: 0 0 20px 20px;
+  -o-border-radius: 0 0 20px 20px;
+}
+
+.benefit-div {
+  display: flex;
+  gap: 0.5rem;
+  line-height: 1.6;
+}
+
+.benefit-div svg {
+  transform: translate(0, 60%);
+  -webkit-transform: translate(0, 60%);
+  -moz-transform: translate(0, 60%);
+  -ms-transform: translate(0, 60%);
+  -o-transform: translate(0, 60%);
+}
+
+.best-value::after {
+  content: "Best Value";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 1;
+  border: solid 1px #000;
+  padding: 0.4rem 0.8rem;
+  background-color: #febf23;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.plan-reccurence {
+  font-size: 0.7rem;
+}
+
+.plan-tagline {
+  font-weight: 300;
+}
+
+.plan-currency {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.plan-amount {
+  font-size: 2.4rem;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+}
+
+.plan-title {
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.plan-tagline {
+  line-height: 1.6;
+}
+
+.custom-pricing-btn {
+  width: 60%;
+  margin: auto;
+}
+
+.wavy-bg {
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 100%);
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+}
+
+
+
+
+
 /* ------  Reusable components ---------- */
