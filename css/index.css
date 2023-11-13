@@ -115,9 +115,7 @@ h3 {
   align-items: center;
 }
 
-.pad-bot-reset {
-  padding-bottom: 0;
-}
+
 
 .padding-right-m {
   padding-right: 2rem !important;
@@ -153,6 +151,14 @@ h3 {
 
 .margin-bot-l {
   margin-bottom: 5rem !important;
+}
+
+.pad-bot-reset {
+  padding-bottom: 0 !important;
+}
+
+.margin-bot-reset {
+  margin-bottom: 0 !important;
 }
 
 .inline-flex {
@@ -663,7 +669,21 @@ h3 {
 }
 
 
+/* ------  Banner ---------- */
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
 
+.banner-title {
+  text-align: center;
+}
 
+.banner-img {
+  width: 65rem;
+}
 
+/* ------  Reusable components ---------- */
 /* ------  Reusable components ---------- */
