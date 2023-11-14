@@ -23,7 +23,7 @@ Default: 1
 - Secondary: #FFD6EF 
 - Tints: 
 - Shades: 
-- Accents: #e8ecf9
+- Accents: #e8ecf9 #e64980
 - Grays: #555 #222 #F6F5F5
 
 
@@ -40,6 +40,8 @@ Used websites: https://maketintsandshades.com/ (generate tint and shade)
   https://fontjoy.com/ (font pairings)
   https://www.shapedivider.app/ (wave generator)
   https://getwaves.io/ (wave generator)
+  https: //imagecolorchanger.com/ (change icon color)
+  https: //www.remove.bg/ (remove icon bg)
 */
 
 * {
@@ -81,11 +83,12 @@ ul {
   min-width: 1200px;
   margin: 0 auto;
   max-width: 80vw;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 section {
   margin-bottom: 10rem !important;
+  align-items: center;
 }
 
 h1 {
@@ -127,6 +130,10 @@ h3 {
 
 .padding-top-m {
   padding-top: 2rem !important;
+}
+
+.padding-top-l {
+  padding-top: 5rem !important;
 }
 
 .padding-left-m {
@@ -691,12 +698,41 @@ h3 {
   height: 440px;
   background-color: #febf23;
   margin-top: -43px;
+  display: table;
+  width: 100%;
+  color: #222;
 }
 
-/* ------  Footer ---------- */
-footer {
+.contact-container {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.banner-box {
   display: flex;
+  gap: 8rem;
+  justify-content: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr;
+}
+
+.contact-title {}
+
+/* ------  Footer ---------- */
+.footer-container {
+  display: table;
+  min-width: 1200px;
+  width: 100%;
   background-color: #000;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
   padding: 0.6rem 0;
   color: #fff;
   text-align: center;
@@ -704,6 +740,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 3px;
+  font-size: 0.8rem;
 }
 
 .footer-icon {
