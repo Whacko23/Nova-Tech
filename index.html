@@ -17,10 +17,12 @@
       <div class="navbar container-xl padding-top-m">
         <img class="logo" src="img/logo.png" alt="Nova Tech logo" />
         <ul class="nav-items padding-right-m">
-          <li><a href="" class="nav-links nav-active">Home</a></li>
-          <li><a href="" class="nav-links hover-zoom">Product</a></li>
-          <li><a href="" class="nav-links hover-zoom">Pricing Plans</a></li>
-          <li><a href="" class="nav-links hover-zoom">Contact</a></li>
+          <li><a href="#hero" class="nav-links nav-active">Home</a></li>
+          <li><a href="#offers" class="nav-links hover-zoom">Product</a></li>
+          <li>
+            <a href="#pricing" class="nav-links hover-zoom">Pricing Plans</a>
+          </li>
+          <li><a href="#contact" class="nav-links hover-zoom">Contact</a></li>
           <li>
             <a href="" class="nav-links inline-flex hover-zoom">
               <svg
@@ -45,7 +47,7 @@
       </div>
     </header>
     <main>
-      <section class="hero-section container-l">
+      <section class="hero-section container-l" id="hero">
         <div class="hero-contents">
           <h1>
             Idea. <br />
@@ -127,7 +129,7 @@
           alt="building mobile app"
         />
       </section>
-      <section class="filler">
+      <section class="filler" id="filler">
         <div class="custom-shape-divider-bottom-1699315946">
           <svg
             data-name="Layer 1"
@@ -163,7 +165,7 @@
           </div>
         </div>
       </section>
-      <section class="offers">
+      <section class="offers" id="offers">
         <div class="container-l">
           <h2>What we offer</h2>
           <div></div>
@@ -254,7 +256,7 @@
           </div>
         </div>
       </section>
-      <section class="partners">
+      <section class="partners" id="partners">
         <div class="custom-shape-divider-bottom-1699823544">
           <svg
             data-name="Layer 1"
@@ -316,7 +318,7 @@
           </div>
         </div>
       </section>
-      <section class="testimonials container-l">
+      <section class="testimonials container-l" id="testimonial">
         <h2 class="margin-bot-l">What our clients say</h2>
         <div class="testimonial-grid">
           <div class="testimonial-box">
@@ -378,7 +380,7 @@
           </div>
         </div>
       </section>
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <div class="pricing-container container-l">
           <div class="half-split-grid pad-bot-reset">
             <div class="pricing-text">
@@ -493,7 +495,7 @@
           ></path>
         </svg>
       </section>
-      <section class="banner margin-bot-reset padding-top-xl">
+      <section class="banner margin-bot-reset padding-top-xl" id="banner">
         <div class="banner-container container-l">
           <h2 class="banner-title">
             Get ready to maximize your productivity <br />
@@ -503,43 +505,118 @@
           <img src="img/banner.png" alt="" class="banner-img" />
         </div>
       </section>
-      <section class="contact-us margin-bot-reset">
+      <section class="contact-us margin-bot-reset" id="contact">
         <div class="contact-container container-l padding-top-xl">
           <img
             class="logo"
             src="img/logo_black_no-bg.png"
             alt="Nova Tech logo"
           />
-          <div class="banner-box">
+          <div class="contact-box padding-top-l padding-bot-xl">
             <div class="contact-grid">
               <h3 class="contact-title">Contacts</h3>
+              <span class="address">
+                <p>
+                  322 Nicola Tesla Road <br />
+                  Houston, TX 77431
+                </p>
+              </span>
+              <span class="department1">
+                <p>
+                  Sales: <br />
+                  sales@novatech.com
+                </p>
+              </span>
+              <span class="department2">
+                <p>
+                  General inquiries: <br />
+                  (832)476-5800
+                </p>
+              </span>
+              <span class="department3">
+                <p>
+                  Customer Care: <br />
+                  info@novatech.com
+                </p>
+              </span>
             </div>
             <div class="contact-links">
-              <h3>Quick Links</h3>
+              <h3 class="link-title">Quick Links</h3>
+              <span class="links">
+                <a class="link" href="">Terms &amp; Conditions</a>
+                <a class="link" href="">Privacy Policy</a>
+              </span>
             </div>
             <div class="inquiries">
-              <h3>Follow</h3>
+              <h3 class="inquiry-title">Follow</h3>
+              <div class="inquiries-flex-box">
+                <p class="signup-text">
+                  Follow us to get our latest news and get updated on our
+                  product
+                </p>
+                <div class="social-icons">
+                  <a class="link" href="https://facebook.com">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      class="icon"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="link" href="https://twitter.com">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      class="icon"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="link" href="https://youtube.com">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      class="icon"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <footer class="footer-container">
-        <div class="footer-content">
-          Developed with
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="#e64980"
-            class="footer-icon"
-          >
-            <path
-              d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
-            />
-          </svg>
-          by aayush lal shrestha &amp; rajanish karki
-        </div>
-      </footer>
     </main>
+
+    <footer class="footer-container" id="footer">
+      <div class="footer-content">
+        Developed with
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="#e64980"
+          class="footer-icon"
+        >
+          <path
+            d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
+          />
+        </svg>
+        by aayush lal shrestha &amp; rajanish karki
+      </div>
+    </footer>
   </body>
 </html>

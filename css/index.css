@@ -40,8 +40,9 @@ Used websites: https://maketintsandshades.com/ (generate tint and shade)
   https://fontjoy.com/ (font pairings)
   https://www.shapedivider.app/ (wave generator)
   https://getwaves.io/ (wave generator)
-  https: //imagecolorchanger.com/ (change icon color)
-  https: //www.remove.bg/ (remove icon bg)
+  https://imagecolorchanger.com/ (change logo color)
+  https://www.remove.bg/ (remove logo bg)
+  https://icons8.com/ (social media icons)
 */
 
 * {
@@ -134,6 +135,10 @@ h3 {
 
 .padding-top-l {
   padding-top: 5rem !important;
+}
+
+.padding-bot-l {
+  padding-bottom: 5rem !important;
 }
 
 .padding-left-m {
@@ -559,6 +564,7 @@ h3 {
   display: grid;
   grid-template-rows: 60% 1fr;
   width: 70%;
+  justify-self: center;
   /* height: 30rem; */
 }
 
@@ -700,7 +706,7 @@ h3 {
   margin-top: -43px;
   display: table;
   width: 100%;
-  color: #222;
+
 }
 
 .contact-container {
@@ -709,18 +715,63 @@ h3 {
   padding-right: 0;
 }
 
-.banner-box {
+.contact-box {
   display: flex;
-  gap: 8rem;
+  gap: 10rem;
   justify-content: center;
+  color: #222;
 }
 
 .contact-grid {
   display: grid;
   grid-template: 1fr 1fr/ 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 3rem;
+  line-height: 1.8;
 }
 
-.contact-title {}
+.contact-title {
+  grid-column: 1/-1;
+}
+
+.link-title {
+  padding-bottom: 3rem;
+}
+
+.inquiry-title {
+  padding-bottom: 3rem;
+}
+
+.signup-text {
+  width: 20rem;
+  line-height: 1.6;
+}
+
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.link:active,
+.link:link,
+.link:hover,
+.link:visited {
+  color: #222;
+  text-decoration: underline;
+}
+
+.inquiries-flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
 
 /* ------  Footer ---------- */
 .footer-container {
