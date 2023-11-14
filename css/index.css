@@ -51,9 +51,10 @@ Used websites: https://maketintsandshades.com/ (generate tint and shade)
   box-sizing: border-box;
 }
 
-.html {
+html {
   /* setting the font size to 10 px */
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
+  scroll-behavior: smooth;
 }
 
 body {
