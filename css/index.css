@@ -76,16 +76,15 @@ ul {
 
 /* ------  Reusable components ---------- */
 
-.container-xl {
-  /* min-width: 1400px; */
+/* .container-xl {
   margin: 0 auto;
-}
+} */
 
 .container-l {
   min-width: 1200px;
   margin: 0 auto;
-  max-width: 80vw;
-  /* padding: 0 2rem; */
+  /* max-width: 80vw; */
+  padding: 0 6rem;
 }
 
 section {
@@ -249,19 +248,8 @@ h3 {
   font-size: 110%;
 }
 
-/* ------  Header ---------- */
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  height: 6em;
-}
-
 .logo {
   height: 4rem;
-  margin-left: 3rem;
 }
 
 .icon {
@@ -282,17 +270,32 @@ h3 {
   height: 12px !important;
 }
 
+/* ------  Header ---------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 6em;
+}
+
+.logo-main {
+  transform: translate(-13px);
+  -webkit-transform: translate(-13px);
+  -moz-transform: translate(-13px);
+  -ms-transform: translate(-13px);
+  -o-transform: translate(-13px);
+}
+
+
+
 .nav-items {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
 }
-
-.nav-items li:last-child {
-  margin-right: 3rem;
-}
-
 
 .nav-active {
   padding-bottom: 0.5em;
@@ -710,11 +713,7 @@ h3 {
 
 }
 
-.contact-container {
-  margin: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
+
 
 .contact-box {
   display: flex;
