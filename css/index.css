@@ -55,6 +55,7 @@ html {
   /* setting the font size to 10 px */
   /* font-size: 62.5%; */
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -81,9 +82,7 @@ ul {
 } */
 
 .container-l {
-  min-width: 1200px;
   margin: 0 auto;
-  /* max-width: 80vw; */
   padding: 0 6rem;
 }
 
@@ -478,8 +477,9 @@ h3 {
 }
 
 .testimonial-box {
-  /* width: 300px; */
-  height: 400px;
+  max-width: 20rem;
+  min-height: 25rem;
+  padding-bottom: 2rem;
   border: solid 2px #000;
   overflow: hidden;
   border-radius: 20px;
@@ -569,6 +569,7 @@ h3 {
   grid-template-rows: 60% 1fr;
   width: 70%;
   justify-self: center;
+  max-width: 25rem;
   /* height: 30rem; */
 }
 
@@ -775,8 +776,8 @@ h3 {
 
 /* ------  Footer ---------- */
 .footer-container {
-  display: table;
-  min-width: 1200px;
+  /* display: table; */
+  /* min-width: 1200px; */
   width: 100%;
   background-color: #000;
 }

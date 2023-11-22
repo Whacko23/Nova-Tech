@@ -1,0 +1,5 @@
+@media screen and (max-width:88em) {
+  .contact-box {
+    gap: 5rem;
+  }
+}
