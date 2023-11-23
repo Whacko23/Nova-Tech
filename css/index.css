@@ -276,9 +276,32 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  position: relative;
   height: 6em;
 }
+
+.menu {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: none !important;
+  display: none;
+}
+
+.nav-icon {
+  height: 4rem;
+  z-index: 9999;
+  display: block;
+  background-color: none;
+
+}
+
+.nav-icon[name="close"] {
+  display: none;
+}
+
 
 .logo-main {
   transform: translate(-13px);
@@ -295,7 +318,9 @@ h3 {
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
+
 }
+
 
 .nav-active {
   padding-bottom: 0.5em;
