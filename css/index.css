@@ -63,6 +63,7 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #555;
+  overflow-x: hidden;
 }
 
 a {
@@ -348,7 +349,7 @@ h3 {
 /* ------  Filler component ---------- */
 .filler {
   width: 100%;
-  display: table;
+  /* display: table; */
 }
 
 .custom-shape-divider-bottom-1699315946 {
@@ -360,7 +361,7 @@ h3 {
 .custom-shape-divider-bottom-1699315946 svg {
   display: block;
   width: 100%;
-  height: 59px;
+  height: 3.68rem;
 }
 
 .custom-shape-divider-bottom-1699315946 .shape-fill {
@@ -420,7 +421,7 @@ h3 {
 /* ------  Partners ---------- */
 .partners {
   width: 100%;
-  display: table;
+  /* display: table; */
 }
 
 .custom-shape-divider-bottom-1699823544 {
@@ -437,7 +438,7 @@ h3 {
 .custom-shape-divider-bottom-1699823544 svg {
   display: block;
   width: 100%;
-  height: 60px;
+  height: 3.68px;
 }
 
 .custom-shape-divider-bottom-1699823544 .shape-fill {
@@ -543,7 +544,7 @@ h3 {
 .pricing {
   background-color: #F6F5F5;
   color: #222;
-  display: table;
+  /* display: table; */
   width: 100%;
   position: relative;
 }
@@ -706,10 +707,9 @@ h3 {
 
 /* ------  Contact Us ---------- */
 .contact-us {
-  height: 440px;
   background-color: #febf23;
   margin-top: -43px;
-  display: table;
+  /* display: table; */
   width: 100%;
 
 }
@@ -725,9 +725,9 @@ h3 {
 
 .contact-grid {
   display: grid;
-  grid-template: 1fr 1fr/ 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 5rem;
-  row-gap: 3rem;
+  row-gap: 1rem;
   line-height: 1.8;
 }
 
