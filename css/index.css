@@ -119,8 +119,6 @@ h3 {
   align-items: center;
 }
 
-
-
 .padding-right-m {
   padding-right: 2rem !important;
 }
@@ -291,7 +289,7 @@ h3 {
 }
 
 .nav-icon {
-  height: 4rem;
+  height: 3rem;
   z-index: 9999;
   display: block;
   background-color: none;

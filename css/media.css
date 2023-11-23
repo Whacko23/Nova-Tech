@@ -74,6 +74,10 @@
     width: 100%;
   }
 
+  .filler-container {
+    margin-top: -5px;
+  }
+
   /* .contact-box {
     gap: 3rem;
   } */
@@ -85,9 +89,7 @@
     font-size: 75%;
   }
 
-  .filler-container {
-    margin-top: -2px;
-  }
+
 
   .testimonial-grid {
     gap: 2rem;
