@@ -36,13 +36,20 @@
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Elevate your digital presence with Nova Tech - Your trusted partner in bespoke website and mobile app development. Harness cutting-edge technology and innovative solutions to propel your business to new heights. Let Nova Tech redefine your online success story"
+    />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/media.css" />
+    <link defer rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header>
       <div class="navbar container-l padding-top-m">
-        <img class="logo logo-main" src="img/logo.png" alt="Nova Tech logo" />
+        <picture>
+          <source srcset="img/logo.webp" type="image/webp" />
+          <img class="logo logo-main" src="img/logo.png" alt="Nova Tech logo" />
+        </picture>
         <ul class="nav-items padding-right-m">
           <li><a href="#hero" class="nav-links nav-active">Home</a></li>
           <li><a href="#offers" class="nav-links hover-zoom">Product</a></li>
@@ -72,7 +79,7 @@
           </li>
         </ul>
 
-        <button class="menu">
+        <button class="menu" aria-label="menu button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -183,11 +190,14 @@
             </div>
           </div>
         </div>
-        <img
-          class="hero-img"
-          src="img/hero-img.png"
-          alt="building mobile app"
-        />
+        <picture>
+          <source srcset="img/hero-img.webp" type="image/webp" />
+          <img
+            class="hero-img"
+            src="img/hero-img.png"
+            alt="building mobile app"
+          />
+        </picture>
       </section>
       <section class="filler" id="filler">
         <div class="custom-shape-divider-bottom-1699315946">
@@ -243,12 +253,15 @@
 
           <div class="image-offers-grid">
             <div class="image-text-offer-box">
-              <img
-                class="offer-img"
-                src="img/artboard1.webp"
-                alt=""
-                srcset=""
-              />
+              <picture>
+                <source srcset="img/artboard1.webp" type="image/webp" />
+                <img
+                  class="offer-img"
+                  src="img/artboard1.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
               <h3>
                 Workflows <br />
                 that flows
@@ -262,12 +275,15 @@
               </p>
             </div>
             <div class="image-text-offer-box">
-              <img
-                class="offer-img"
-                src="img/artboard2.webp"
-                alt=""
-                srcset=""
-              />
+              <picture>
+                <source srcset="img/artboard2.webp" type="image/webp" />
+                <img
+                  class="offer-img"
+                  src="img/artboard2.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
               <h3>
                 All-in-one <br />
                 solution
@@ -280,12 +296,15 @@
               </p>
             </div>
             <div class="image-text-offer-box">
-              <img
-                class="offer-img"
-                src="img/artboard3.webp"
-                alt=""
-                srcset=""
-              />
+              <picture>
+                <source srcset="img/artboard3.webp" type="image/webp" />
+                <img
+                  class="offer-img"
+                  src="img/artboard3.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
               <h3>
                 Comprehensive <br />
                 customer support
@@ -298,12 +317,15 @@
               </p>
             </div>
             <div class="image-text-offer-box">
-              <img
-                class="offer-img"
-                src="img/artboard4.webp"
-                alt=""
-                srcset=""
-              />
+              <picture>
+                <source srcset="img/artboard4.webp" type="image/webp" />
+                <img
+                  class="offer-img"
+                  src="img/artboard4.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
               <h3>
                 Smart <br />
                 automation tools
@@ -344,39 +366,38 @@
               delivering exceptional solutions.
             </p>
             <div class="partners-grid padding-bot-xl">
-              <img
-                src="img/company1.png"
-                alt=""
-                class="partner-grid-items"
-              /><img
-                src="img/company2.webp"
-                alt=""
-                class="partner-grid-items"
-              /><img
-                src="img/company3.webp"
-                alt=""
-                class="partner-grid-items"
-              /><img
-                src="img/company4.webp"
-                alt=""
-                class="partner-grid-items"
-              /><img
-                src="img/company5.webp"
-                alt=""
-                class="partner-grid-items"
-              /><img
-                src="img/company6.webp"
-                alt=""
-                class="partner-grid-items"
-              /><img
-                src="img/company7.webp"
-                alt=""
-                class="partner-grid-items"
-              /><img
-                src="img/company8.webp"
-                alt=""
-                class="partner-grid-items"
-              />
+              <picture>
+                <source srcset="img/company1.webp" type="image/webp" />
+                <img src="img/company1.png" alt="" class="partner-grid-items" />
+              </picture>
+              <picture>
+                <source srcset="img/company2.webp" type="image/webp" />
+                <img src="img/company2.png" alt="" class="partner-grid-items" />
+              </picture>
+              <picture>
+                <source srcset="img/company3.webp" type="image/webp" />
+                <img src="img/company3.png" alt="" class="partner-grid-items" />
+              </picture>
+              <picture>
+                <source srcset="img/company4.webp" type="image/webp" />
+                <img src="img/company4.png" alt="" class="partner-grid-items" />
+              </picture>
+              <picture>
+                <source srcset="img/company5.webp" type="image/webp" />
+                <img src="img/company5.png" alt="" class="partner-grid-items" />
+              </picture>
+              <picture>
+                <source srcset="img/company6.webp" type="image/webp" />
+                <img src="img/company6.png" alt="" class="partner-grid-items" />
+              </picture>
+              <picture>
+                <source srcset="img/company7.webp" type="image/webp" />
+                <img src="img/company7.png" alt="" class="partner-grid-items" />
+              </picture>
+              <picture>
+                <source srcset="img/company8.webp" type="image/webp" />
+                <img src="img/company8.png" alt="" class="partner-grid-items" />
+              </picture>
             </div>
           </div>
         </div>
@@ -386,9 +407,19 @@
         <div class="testimonial-grid">
           <div class="testimonial-box">
             <div class="yellow-bar">
-              <button class="black-dots margin-left-m">&nbsp;</button>
-              <button class="black-dots">&nbsp;</button>
-              <button class="black-dots">&nbsp;</button>
+              <button
+                class="black-dots margin-left-m"
+                name="btn1"
+                aria-label="btn1"
+              >
+                &nbsp;
+              </button>
+              <button class="black-dots" name="btn2" aria-label="btn2">
+                &nbsp;
+              </button>
+              <button class="black-dots" name="btn3" aria-label="btn3">
+                &nbsp;
+              </button>
             </div>
             <div class="testimonial-text">
               <blockquote class="testimonial">
@@ -405,9 +436,19 @@
           </div>
           <div class="testimonial-box">
             <div class="yellow-bar">
-              <button class="black-dots margin-left-m">&nbsp;</button>
-              <button class="black-dots">&nbsp;</button>
-              <button class="black-dots">&nbsp;</button>
+              <button
+                class="black-dots margin-left-m"
+                name="btn1"
+                aria-label="btn1"
+              >
+                &nbsp;
+              </button>
+              <button class="black-dots" name="btn2" aria-label="btn2">
+                &nbsp;
+              </button>
+              <button class="black-dots" name="btn3" aria-label="btn3">
+                &nbsp;
+              </button>
             </div>
             <div class="testimonial-text">
               <blockquote class="testimonial">
@@ -424,9 +465,19 @@
           </div>
           <div class="testimonial-box">
             <div class="yellow-bar">
-              <button class="black-dots margin-left-m">&nbsp;</button>
-              <button class="black-dots">&nbsp;</button>
-              <button class="black-dots">&nbsp;</button>
+              <button
+                class="black-dots margin-left-m"
+                name="btn1"
+                aria-label="btn1"
+              >
+                &nbsp;
+              </button>
+              <button class="black-dots" name="btn2" aria-label="btn2">
+                &nbsp;
+              </button>
+              <button class="black-dots" name="btn3" aria-label="btn3">
+                &nbsp;
+              </button>
             </div>
             <div class="testimonial-text">
               <blockquote class="testimonial">
@@ -565,16 +616,22 @@
             with our workflow solutions
           </h2>
           <button class="button btn-alt custom-banner-btn">Get Started</button>
-          <img src="img/banner.png" alt="" class="banner-img" />
+          <picture>
+            <source srcset="img/banner.webp" type="image/webp" />
+            <img src="img/banner.png" alt="" class="banner-img" />
+          </picture>
         </div>
       </section>
       <section class="contact-us margin-bot-reset" id="contact">
         <div class="contact-container container-l padding-top-xl">
-          <img
-            class="logo"
-            src="img/logo_black_no-bg.png"
-            alt="Nova Tech logo"
-          />
+          <picture>
+            <source srcset="img/logo_black_no-bg.webp" type="image/webp" />
+            <img
+              class="logo"
+              src="img/logo_black_no-bg.png"
+              alt="Nova Tech logo"
+            />
+          </picture>
           <div class="contact-box padding-top-l padding-bot-xl">
             <div class="contact-grid">
               <h3 class="contact-title">Contacts</h3>
@@ -618,7 +675,12 @@
                   product
                 </p>
                 <div class="social-icons">
-                  <a class="link" href="https://facebook.com">
+                  <a
+                    class="link"
+                    href="https://facebook.com"
+                    name="facebook"
+                    aria-label="Follow us of facebook"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -631,7 +693,12 @@
                       ></path>
                     </svg>
                   </a>
-                  <a class="link" href="https://twitter.com">
+                  <a
+                    class="link"
+                    href="https://twitter.com"
+                    name="twitter"
+                    aria-label="Follow us of twitter"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -644,7 +711,12 @@
                       ></path>
                     </svg>
                   </a>
-                  <a class="link" href="https://youtube.com">
+                  <a
+                    class="link"
+                    href="https://youtube.com"
+                    name="youtube"
+                    aria-label="Follow us of youtube"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
